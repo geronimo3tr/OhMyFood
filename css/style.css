@@ -1,0 +1,394 @@
+/*******general******/
+    * {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    h4{
+        font-family: 'Shrikhand', cursive;
+        font-size: 30px;
+        height: 10px;
+        margin-top: 0;
+    }
+    
+    body{
+        display: flex;
+        margin: 0px;
+    }
+    
+    .main-container {
+        width: 100%;
+        max-width: 1440px;
+        overflow: hidden;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+    
+    .colorfull-button{
+        background: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+        height: 50px;
+        border-radius: 25px;
+        border: none;
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        padding: 0px 20px;
+    }
+    
+    .card {
+        border-radius: 20px;
+        padding: 5px;
+        background: #f6f6f6;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.3));
+    }
+    
+    img {
+        object-fit: cover;
+    }
+    
+    .card-title{
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    
+    .card-subtitle{
+        margin: 0;
+        font-weight: 300;
+    }
+    
+    /********Coeur********/
+    .heart-absolute{
+        position: absolute;
+    }
+    
+    i{
+        font-size: 1.5em;
+    }
+    
+    .heart-full{
+        color: transparent;
+        background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        cursor: pointer;
+        opacity: 0;
+    }
+
+    .heart-full:active{
+        opacity: 1;
+    }
+    
+    /***********header**********/
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14px;
+    }
+
+    header article{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50px;
+        background-color: #EAEAEA;
+        color: #353535; 
+    }
+
+    header a{
+       padding: 17px;
+    }
+
+    .restaurants-explorer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-color: #F6F6F6;
+        padding-left: 30px;
+        height: 300px;
+    }
+
+    header button{
+        margin-top: 20px;
+    }
+
+   /*******Fontionnement**********/
+    .function{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .function-card{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .function .card{
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        height: 72.38px;
+    }
+
+    .function .fa-solid{
+        margin: 30px;
+    }
+
+    .function .fa-store{
+        color: transparent;
+        background-image: linear-gradient(to top, #9356DC 0%, #FF79DA 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+        
+    .number{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background-color: #9356DC;
+        height: 24px;
+        width: 24px;
+        border-radius: 30px;
+        color: white;
+         left:-10px;
+        }
+
+        /*************Restaurants*************/
+
+        .restaurants{
+            padding-left: 20px;
+            padding-right:20px;
+        }
+        
+        .restaurants-card .card{
+            padding: 0;
+            height: 270px;
+            margin-bottom: 30px;
+        }
+
+        .restaurants-card .link{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .restaurants-card img{
+            width: 100%;
+            height: 200px;
+            border-radius: 25px 25px 0px 0px;
+        }
+
+        .restaurants-card .new::before {
+            content: "Nouveau";
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 29px;
+            width: 80px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #3a8266;
+            background-color: #99E2D0;
+            top: 15px;
+            right: 3%;
+          }
+
+       .restaurants-card .card-content{
+        display: flex;
+        justify-content: space-between;
+        padding-left: 13px;
+        }
+
+        .restaurants-card .card-icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 30px;
+        }
+        /*********Footer************/
+        footer{
+            background-color: #353535;
+            color: white;
+            height: 100%;
+        }
+
+        .footer-title{
+            font-weight: 400;
+            padding-top: 25px;
+            padding-bottom: 10px;
+        }
+
+        footer nav ul{
+            list-style: none;
+            text-decoration: none;
+            margin: 0;
+        }
+
+        .icon{
+            width: 11px;
+        }
+        
+        footer .icon{
+            margin-right: 15px;
+        }
+
+        footer a{
+            color: white;
+            text-decoration: none;
+        
+        }
+
+        footer nav li{
+            margin-bottom:16px;
+        }
+
+        /************Page HTML pour les plats***********/
+
+        /********Header***********/
+        .header{
+            display: flex;
+            flex-direction: row;
+            margin-top: 0px;
+        }
+
+        .header-title{
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .fa-arrow-left{
+            color: black;
+        }
+
+/**********plats***********/
+    main img{
+        width: 100%;
+        height: 275px;
+        }
+
+      .dishes-all-menu{
+            position: relative;
+            background-color: #F6F6F6;
+            border-radius: 25px 25px 0px 0px;
+            margin-top: -70px;
+            padding: 40px;
+        }
+
+        .dishes-header{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .title{
+            font-family: 'Shrikhand', cursive;
+        }
+
+        .dishes-header .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dishes{
+            margin-bottom: 35px;
+        }
+
+        .dishes .card{
+            display: flex;
+            margin-bottom: 15px;
+            padding: 0;
+        }
+
+        .dishes .card-content{
+            padding-left: 5px;
+            flex: 1;
+            margin-bottom: 10px;
+        }
+
+        .menu{
+            border-bottom:solid #99E2D0;
+            width: 40px;
+        }
+
+         .dishes .card-subtitle{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .prix{
+            padding-right: 5px;
+        }
+        
+       
+
+        .dishes-all-menu .colorfull-button{
+           display: flex;
+            justify-content: center;
+            align-items: center;
+           margin: auto;
+           width: 186px;
+        }
+
+
+        /**************Dishes-Animation*********************/
+        
+        .check-container{
+            background-color: #99E2D0;
+            width: 0px;
+            opacity: 0;
+            border-radius: 0px 20px 20px 0px;
+            
+        }
+
+        .card:hover .check-container{
+            animation: slide 1s forwards;
+        }
+
+        .fa-check-circle{
+            display: flex;
+            justify-content: center;
+            color: white;
+            height: 100%;
+            align-items: center;
+        }
+
+        @keyframes slide {
+            from {
+              width: 0;
+              opacity: 0%;
+            }
+            to {
+              width: 60px;
+              opacity: 100%;
+            }
+          }
+          
+          @keyframes slideoff {
+            from {
+              width: 60px;
+              opacity: 100%;
+            }
+            to {
+              width: 0px;
+              opacity: 0%;
+            }
+          }
+      
+           /************Media Querie***********/
+           /**********Tablette**************/
+           @media all and (min-width: 1024px) {
+
+            body{
+                background: red;
+            }
+        }
+
