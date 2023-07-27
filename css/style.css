@@ -339,11 +339,14 @@
             width: 0px;
             opacity: 0;
             border-radius: 0px 20px 20px 0px;
-            
         }
 
         .card:hover .check-container{
-            animation: slide 1s forwards;
+            animation: slidein 1s forwards;
+        }
+
+        .card .check-container{
+            animation: slideout 1s;
         }
 
         .fa-check-circle{
@@ -354,7 +357,7 @@
             align-items: center;
         }
 
-        @keyframes slide {
+        @keyframes slidein {
             from {
               width: 0;
               opacity: 0%;
@@ -365,7 +368,7 @@
             }
           }
           
-          @keyframes slideoff {
+          @keyframes slideout {
             from {
               width: 60px;
               opacity: 100%;
