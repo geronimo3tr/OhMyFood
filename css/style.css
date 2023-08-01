@@ -30,6 +30,10 @@
         font-weight: 500;
         padding: 0px 20px;
     }
+
+    .colorfull-button:hover{
+        filter: brightness(110%);
+    }
     
     .card {
         border-radius: 20px;
@@ -68,9 +72,10 @@
         -webkit-background-clip: text;
         cursor: pointer;
         opacity: 0;
+        transition: ease-in 0.5s;
     }
 
-    .heart-full:active{
+    .heart-full:hover{
         opacity: 1;
     }
     
@@ -339,17 +344,15 @@
             width: 0px;
             opacity: 0;
             border-radius: 0px 20px 20px 0px;
+            transition:  ease-in 1s;
         }
 
         .card:hover .check-container{
-            animation: slidein 1s forwards;
+            width: 60px;
+            opacity: 100%;
         }
 
-        .card .check-container{
-            animation: slideout 1s;
-        }
-
-        .fa-check-circle{
+       .fa-check-circle{
             display: flex;
             justify-content: center;
             color: white;
@@ -357,27 +360,7 @@
             align-items: center;
         }
 
-        @keyframes slidein {
-            from {
-              width: 0;
-              opacity: 0%;
-            }
-            to {
-              width: 60px;
-              opacity: 100%;
-            }
-          }
-          
-          @keyframes slideout {
-            from {
-              width: 60px;
-              opacity: 100%;
-            }
-            to {
-              width: 0px;
-              opacity: 0%;
-            }
-          }
+
       
            /************Media Querie***********/
            /**********Tablette**************/
