@@ -85,6 +85,8 @@ i
     border: 10px solid #f3f3f3
     border-top: 10px solid #2c3e50
     border-bottom: 10px solid #e74c3c
+    border-left: 10px solid#9356DC
+    border-right: 10px solid #FF79DA
     border-radius: 50%
     width: 100px
     height: 100px
@@ -276,6 +278,7 @@ img
         display: flex
         margin-bottom: 15px
         padding: 0
+        animation: slidein 2s
     .card-content
         padding-left: 5px
         flex: 1
@@ -285,6 +288,14 @@ img
     .card-subtitle
         display: flex
         justify-content: space-between
+@keyframes slidein
+    from
+        transform: translateY(-100px)
+        opacity: 0
+    to
+        opacity: 1
+        transform: translateY(0)
+
 /******Media Querie******/
 /******Desktop******/
 @media all and (min-width: 1024px)
