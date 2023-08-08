@@ -23,6 +23,7 @@ body
     padding: 0px 20px
     &:hover
         filter: brightness(110%)
+        box-shadow: 10px 5px 5px grey
 img
     object-fit: cover
 .card
@@ -274,11 +275,11 @@ img
         width: 186px
 .dishes
     margin-bottom: 35px
+    animation: slidein 2s
     .card
         display: flex
         margin-bottom: 15px
         padding: 0
-        animation: slidein 2s
     .card-content
         padding-left: 5px
         flex: 1
@@ -288,13 +289,19 @@ img
     .card-subtitle
         display: flex
         justify-content: space-between
+.mains
+    animation: slidein 2s 1s forwards
+    opacity: 0
+.desserts
+    animation: slidein 2s 2s forwards
+    opacity: 0
 @keyframes slidein
     from
-        transform: translateY(-100px)
+        transform: translateX(-100px)
         opacity: 0
     to
         opacity: 1
-        transform: translateY(0)
+        transform: translateX(0)
 
 /******Media Querie******/
 /******Desktop******/
